@@ -1,8 +1,3 @@
-// explain dag data structure - focus on the pointer + how it moves through the dag
-// storing dag data structure in memory: if the dag gets too big, you run out of RAM, the server crashes.
-// ... multiple users runniinng on the server at the same time means everyone will be using the same dag meaning a crazy story
-// 1) Fix by storing dag iin databasse -> stops server crashing when out of RAM
-// 2) New connectioinss have cookies to identify that ussser from theiir web browser. Then use the cookiie to retrieve the dag for that specific user
 
 const express = require('express');
 const app = express();
