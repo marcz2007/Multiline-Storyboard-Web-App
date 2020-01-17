@@ -31,7 +31,10 @@ To solve the former issue of running out of memory, a full production web applic
 * Set up a locally hosted server using a web framework (Express in NodeJS)
 * Route based on conditional logic surrounding query and body parameters
 * Create template HTML pages using Jade
-* Design a web application which requires logic and a directioinal data structure to store information without relying on Javascript <script> code resulting in a Backend web application
+* Design a web application which requires logic and a directioinal data structure using object literals to store information without relying on Javascript `<script>` code resulting in a Backend web application
+* Work with middleware such as the `bodyParser`
+
+
   
 
 
