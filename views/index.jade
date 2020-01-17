@@ -1,0 +1,44 @@
+mixin quadrant(  rowValue, tablePosition  )
+    th
+        if rowValue == undefined
+            form(action="/", method="post")
+                input(type='text', name=tablePosition)
+                input( type='submit', value='Submit')
+        else
+            a(href='/?position=' + tablePosition) #{rowValue}
+
+
+doctype html
+html
+style.
+    body {
+        background: rgba(244, 244, 244, 0.98);
+        font-family: Verdana;
+        color: #000000;
+        padding: 30px;
+    }
+
+    th, td {
+        border: 3px solid black;
+        padding: 30px;
+    }
+a(href='/' ) Back to the beginning
+
+table
+    tbody
+        tr
+            th
+            +quadrant( topField, 'topField')
+            th
+        tr
+            +quadrant( leftField, 'leftField')
+
+            th
+                h1 #{value}
+            +quadrant( rightField, 'rightField')
+        tr
+            th
+            +quadrant(bottomField, 'bottomField')
+            th
+
+
